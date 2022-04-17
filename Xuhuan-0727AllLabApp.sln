@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xuhuan-0727AllLabApp", "Xuhuan-0727AllLabApp\Xuhuan-0727AllLabApp.csproj", "{4B3E4A33-2DF4-4496-B59A-4B25CF983E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabAss2", "LabAss2\LabAss2.csproj", "{6FEB9E9E-33FD-4AB9-A73C-DAA3E5C14435}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B3E4A33-2DF4-4496-B59A-4B25CF983E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3E4A33-2DF4-4496-B59A-4B25CF983E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3E4A33-2DF4-4496-B59A-4B25CF983E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3E4A33-2DF4-4496-B59A-4B25CF983E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FEB9E9E-33FD-4AB9-A73C-DAA3E5C14435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FEB9E9E-33FD-4AB9-A73C-DAA3E5C14435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FEB9E9E-33FD-4AB9-A73C-DAA3E5C14435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FEB9E9E-33FD-4AB9-A73C-DAA3E5C14435}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3646BE6-0A0E-43C3-8C19-F30D6EC61939}
+	EndGlobalSection
+EndGlobal
