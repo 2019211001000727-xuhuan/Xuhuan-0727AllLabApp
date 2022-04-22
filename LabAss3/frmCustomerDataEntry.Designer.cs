@@ -42,13 +42,19 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblCountry = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.dtgCustomer = new System.Windows.Forms.DataGridView();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.lblID = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(223, 445);
+            this.btnPreview.Location = new System.Drawing.Point(153, 442);
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(75, 23);
             this.btnPreview.TabIndex = 19;
@@ -188,11 +194,66 @@
             this.lblName.TabIndex = 10;
             this.lblName.Text = "Customer Name";
             // 
+            // dtgCustomer
+            // 
+            this.dtgCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCustomer.Location = new System.Drawing.Point(472, 110);
+            this.dtgCustomer.Name = "dtgCustomer";
+            this.dtgCustomer.RowHeadersWidth = 51;
+            this.dtgCustomer.RowTemplate.Height = 27;
+            this.dtgCustomer.Size = new System.Drawing.Size(549, 209);
+            this.dtgCustomer.TabIndex = 20;
+            this.dtgCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCustomer_CellClick);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(259, 441);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 21;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(153, 482);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 22;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(92, 486);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 15);
+            this.lblID.TabIndex = 23;
+            this.lblID.Visible = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(259, 482);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 24;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // frmCustomerDataEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 578);
+            this.ClientSize = new System.Drawing.Size(1060, 578);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.lblID);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.dtgCustomer);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.GroupBox2);
             this.Controls.Add(this.chkPainting);
@@ -205,10 +266,12 @@
             this.Controls.Add(this.lblName);
             this.Name = "frmCustomerDataEntry";
             this.Text = "Customer Data Entry Screen";
+            this.Load += new System.EventHandler(this.frmCustomerDataEntry_Load);
             this.GroupBox2.ResumeLayout(false);
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +293,10 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblCountry;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.DataGridView dtgCustomer;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
