@@ -164,7 +164,7 @@ namespace LabAss3
             string strConnection = "Data Source=DESKTOP-AONV1NO;Initial Catalog=CustomerDB;Integrated Security=True;Pooling=False";
             SqlConnection objConnection = new SqlConnection(strConnection);
             objConnection.Open();
-            string strCommand = "Delete from Customer where id = '" + lblID.Text + ".";
+            string strCommand = "Delete from Customer where id = " + lblID.Text + ".";
             SqlCommand objCommand = new SqlCommand(strCommand,objConnection) ;
             objCommand.ExecuteNonQuery();
             objConnection.Close();
